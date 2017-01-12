@@ -2,6 +2,8 @@ $col1: #f0f;
 $col2: #ff0;
 $col3: #0ff;
 
+$duration: 60s;
+
 .box {
   width: 400px;
   height: 150px;
@@ -15,14 +17,14 @@ $col3: #0ff;
 
 .box-border {
   border: 5px solid currentColor;
-  animation: colors 10s linear infinite;
+  animation: colors $duration linear infinite;
 }
 
 .box-bg {
   color: #fff;
   background: linear-gradient(-45deg, $col1, $col2, $col3, $col1, $col2);
   background-size: 400%;
-  animation: bg-colors 10s linear infinite;
+  animation: bg-colors $duration linear infinite;
 }
 
 @keyframes colors {

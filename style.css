@@ -10,13 +10,13 @@
 
 .box-border {
   border: 5px solid currentColor;
-  animation: colors 10s linear infinite; }
+  animation: colors 60s linear infinite; }
 
 .box-bg {
   color: #fff;
   background: linear-gradient(-45deg, #f0f, #ff0, #0ff, #f0f, #ff0);
   background-size: 400%;
-  animation: bg-colors 10s linear infinite; }
+  animation: bg-colors 60s linear infinite; }
 
 @keyframes colors {
   0% {

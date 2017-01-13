@@ -27,6 +27,12 @@ $duration: 60s;
   animation: bg-colors $duration linear infinite;
 }
 
+.box-filter-bg {
+  color: #fff;
+  background: linear-gradient(-45deg, $col1, $col2);
+  animation: bg-filter $duration linear infinite;
+}
+
 @keyframes colors {
   0% {
     color: $col1;
@@ -48,5 +54,14 @@ $duration: 60s;
   }
   100% {
     background-position: right bottom;
+  }
+}
+
+@keyframes bg-filter {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
   }
 }
